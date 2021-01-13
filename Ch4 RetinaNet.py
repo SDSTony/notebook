@@ -31,7 +31,7 @@ HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/rkHc_T
 # + [markdown] id="KK93nhnJfoyQ"
 # 3장에서는 제공된 데이터에 augmentation을 가하는 방법과 데이터셋 클래스를 만드는 방법을 확인했습니다. 이번 장에서는 여기에 수정을 해주겠습니다. torchvision에서 제공하는 one-stage 모델인 RetinaNet을 활용해 의료용 마스크 검출 모델을 구축해보겠습니다. 
 #
-# 4.1절부터 4.3절까지는 2장과 3장에서 확인한 내용을 바탕으로 데이터를 불러오고 훈련용, 시험용 데이터로 나눈 후 데이터셋 클래스를 정의하겠습니다. 4.4절에서는 torchvision API를 활용하여 사전 훈련된 모델을 불러오겠습니다. 4.5절에서는 전이 여기에 수정을 좀 하구요  학습을 통해 모델 학습을 진행한 후 4.6절에서 예측값 산출 및 모델 성능을 확인해보겠습니다. 
+# 4.1절부터 4.3절까지는 2장과 3장에서 확인한 내용을 바탕으로 데이터를 불러오고 훈련용, 시험용 데이터로 나눈  여기에 수정을 좀 하구요  학습을 통해 모델 학습을 진행한 후 4.6절에서 예측값 산출 및 모델 성능을 확인해보겠습니다. 
 
 # + [markdown] id="hagQJQhNH3tx"
 # ## 4.1 데이터 다운로드
@@ -49,6 +49,9 @@ HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/rkHc_T
 
 # + [markdown] id="bTn5bLPVftSn"
 # 3.3절에서 확인한 데이터 분리 방법을 활용하여 데이터를 분리하겠습니다. 
+# -
+
+print('hello hihihi')
 
 # + id="PHqwbdjycpUP" colab={"base_uri": "https://localhost:8080/"} executionInfo={"status": "ok", "timestamp": 1606506027461, "user_tz": -540, "elapsed": 721, "user": {"displayName": "\uc548\uc131\uc9c4", "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14GiCjgkN_MvtrSUHRuFvstrWm6fhi5cf7CKd2UHYAw=s64", "userId": "00266029492778998652"}} outputId="f2481721-1cfa-4974-cdc1-b0d70309d5a7"
 import os
